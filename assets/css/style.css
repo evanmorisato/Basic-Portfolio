@@ -58,6 +58,10 @@ a {
     color: #777777; 
 }
 
+a:hover {
+    color: fuchsia;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -69,7 +73,7 @@ li {
 
 img {
     float: left;
-    margin: 20px;
+    margin: 0px;
 }
 
 footer {
