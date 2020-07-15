@@ -13,6 +13,7 @@ body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;        
     color: #777;
     background: #dddddd;
+    background-image: url("../images/ggbackground.jpg");
     font-size: 18px;
     line-height: 32px;
     min-height: 100%;
@@ -42,6 +43,7 @@ section {
 h2 {
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif ;
+    border-bottom: 3px solid #4aaaa5;
 }
 
 header {
@@ -53,13 +55,32 @@ header {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+img {
+    width: 20%
+}
+
+:root {
+    --mainColor: #4aaaa5;
+}
+
 a {
+    background:
+        linear-gradient(
+            to bottom, var(--mainColor) 0%,
+            var(--mainColor) 100%
+        );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    transition: background-size .2s;
     text-decoration: none;
-    color: #777777; 
+    color: #000000; 
+    font-size: x-large;
 }
 
 a:hover {
-    color: fuchsia;
+    color: rgb(255, 255, 255);
+    background-size: 4px 50px;
 }
 
 ul {
@@ -75,6 +96,10 @@ li {
     float: left;
     margin: 20px;
 
+}
+
+title {
+    text-decoration: underline;
 }
 
 
@@ -93,13 +118,17 @@ footer {
     font-size: 10px;
 }
 
+#ftrName {
+    color: #ffffff;
+}
+
 
 .logo {
     float: left;
     padding: 0 20px;
-    position: absolute;
     bottom: 0;
     left: 315px;
+    position: absolute;
     color: #ffffff;
     background: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -172,3 +201,25 @@ footer {
 #nameLogo {
     color: white;
 }
+
+.img__wrap {
+    position: relative;
+}
+
+.img__description {
+    position: absolute;
+    top: -20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(39, 55, 65, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+

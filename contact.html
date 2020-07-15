@@ -31,7 +31,20 @@
                 <h1>Contact</h1>
             </header>
 
-            <div class="form">
+            <form method="POST" action="mailto:evanmorisato@gmail.com">
+                Name<br>
+                <input type="text" name="name" value="John Smith" class="form-field" required="required"><br>
+                
+                Email<br>
+                <input type="text" name="email" value="example@gmail.com" class="form-field" required="required"><br>
+                
+                Message<br>
+                <textarea class="form-field form-text-area" name="message" required="required"></textarea><br>
+
+                <input type="submit" value="Send Email" class="form-btn" onclick="alert('Message Sent!')">
+            </form>
+
+            <!-- <div class="form">
                 Name<br>
                 <input type="text" name="name" value="John Smith" class="form-field"><br>
             
@@ -41,13 +54,13 @@
                 Message<br>
                 <textarea class="form-field form-text-area"></textarea><br>
 
-                <input type="submit" value="Submit" class="form-btn">
-            </div>
+                <input type="submit" value="Send Email" class="form-btn">
+            </div> -->
 
         </section>
 
         <footer>
-            <p>Copyright &copy;</p>
+            <a href="https://github.com/evanmorisato/" id="ftrName">Evan Morisato &copy;</a>
         </footer>
 
     </body>
