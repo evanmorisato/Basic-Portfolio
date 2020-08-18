@@ -223,3 +223,21 @@ footer {
     opacity: 1;
 }
 
+.contact-area {
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 650px;
+    float: left;
+    border: 2px solid #ddd;
+}
+
+.sidebar {
+    padding: 30px;
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
